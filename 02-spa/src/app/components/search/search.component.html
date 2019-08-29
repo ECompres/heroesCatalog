@@ -1,0 +1,10 @@
+<h1>Buscando: <small>{{ termino }}</small></h1>
+<div class="card-columns" *ngIf="heroe.length >0">
+
+  <app-heroe-tarjeta [heroe]="heroe" [index]="heroe.idx" *ngFor="let heroe of heroe"></app-heroe-tarjeta>
+
+</div>
+
+<div *ngIf="heroe.length == 0">
+  No Heroes
+</div>
